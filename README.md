@@ -2,6 +2,7 @@
 This project presents an in-depth analysis of logistics data from Delhivery, a leading supply chain services company. Using Python and data science techniques, the notebook explores shipment patterns, delivery timelines, and performance indicators.
 📌 Objective
 To perform exploratory data analysis (EDA), feature engineering, and statistical testing on delivery trip data to understand patterns in time, distance, delivery performance, and operational behavior.
+
 📂 Dataset Overview
 The dataset contains trip-level segment data for deliveries with 24 columns and includes:
 
@@ -9,7 +10,9 @@ Timestamps (trip_creation_time, od_start_time, od_end_time)
 Source/Destination info (source_center, destination_center, source_name, destination_name)
 Time and distance metrics (actual_time, osrm_time, actual_distance_to_destination, etc.)
 Segment-level and total-level route information
+
 🔧 Steps Performed
+
 1. 📥 Data Preprocessing
 Converted datatypes (datetime64, category)
 Replaced nulls in source_name and destination_name with "UNKNOWN"
@@ -31,7 +34,9 @@ Segment-level and trip-level time/distance
 Applied IQR method to detect and count extreme values in time and distance columns
 6. ⚖️ Feature Scaling
 Used both MinMaxScaler and StandardScaler for modeling readiness
+
 📈 Key Insights
+
 🕒 87.9% of trips occurred in September; highest trip creation at 10 P.M
 🚛 Carting trips made up 60.2% vs FTL (39.8%)
 🌆 Mumbai, Bengaluru, Gurgaon dominate both source and destination cities
